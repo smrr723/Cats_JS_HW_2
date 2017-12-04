@@ -3,6 +3,13 @@
    font-size: 9pt;
 }
 
+h1 {
+   font-size: 32pt;
+   font-weight: bold;
+   color: purple;
+
+}
+
 .logo {
   width: 50px;
   height: 50px;
@@ -12,16 +19,36 @@
   color: red;
 }
 
-img {
+#header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 150px;
+}
+
+#form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.catPic {
    width: 200px;
    border-radius: 3px;
    border-style: solid;
    border-width: 1px;
    border-color: #afafaf;
 }
-
-img:hover {
+.catPic:hover {
    transform: scale(1.1);
+}
+
+.dogAd {
+   width: 420px;
+   border-radius: 3px;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #afafaf;
 }
 
 ul {

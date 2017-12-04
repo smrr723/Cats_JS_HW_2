@@ -1,26 +1,20 @@
 var addCat = function(name, favFood, imgURL){
-   // this.name = name;
-   // this.favFood = favFood;
-   // this.imgURL = imgURL;
+
    var ul = document.createElement('ul');
+   var nameLi = document.createElement('li');
+   var faveFoodLi = document.createElement('li');
+   var imgLi = document.createElement('li');
+   var cats = document.getElementById('cats');
+
    ul.classList.add('cat');
 
-   var nameLi = document.createElement('li');
-   nameLi.innerText = "Name: " + name;
-
-   var faveFoodLi = document.createElement('li');
+   nameLi.innerText = "Name:" + name;
    faveFoodLi.innerText = "Favourite Food: " + favFood;
-
-   var imgLi = document.createElement('li');
-   imgLi.innerHTML = '<img src="' + imgURL + '"/>'
-
-   var img = document.createElement('img');
+   imgLi.innerHTML = '<img class="catPic" src="' + imgURL + '"/>'
 
    ul.appendChild(nameLi);
    ul.appendChild(faveFoodLi);
    ul.appendChild(imgLi);
-   // imgLi.appendChild(img);
-   var cats = document.getElementById('cats');
    cats.appendChild(ul);
 };
 
